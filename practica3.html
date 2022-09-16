@@ -2,125 +2,228 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 3- Resumen respecto a la Leccion No3</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica 3- Resumen respecto a la Leccion No3</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
- <body>
-    <h1>¿Qué es un CSS?</h1>
-    <p>Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo 
-      lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido 
-      básico de las páginas.
-    </p>
-   <h1>¿Para qué sirve un CSS?</h1>
-    <p>Con CSS puedes crear reglas para decirle a tu sitio web cómo quieres mostrar la información y guardar 
-      los comandos para elementos de estilo (como fuentes, colores, tamaños, etc.) separados de los que configuran 
-      el contenido.
-      Además, puedes crear formatos específicos útiles para comunicar tus ideas y producir experiencias más agradables 
-      visualmente para los usuarios del sitio web.
-    </p>
-   <h1>¿Cuál es la diferencia que sería más difícil de realizar en un sitio web si se optara por no usar un CSS?</h1>
-    <p>Al momento de realizar el código, ya que con CSS sería algo más sencillo, no tan complejo y más rápido
-    </p>  
 
-    <h2>Añadir estilos para el texto</h2>
-    <p>Cuando estamos diseñando la estructura de las páginas, el empleo de hojas de estilo internas es una cuestión de comodidad: resulta más sencillo para crear y modificar reglas si las tenemos dentro de la página y podemos llegar a ellas desplazando la ventana que si las tenemos en un archivo externo.</p>
-    <p><i>link href="reset.css" rel="stylesheet" type="text/css</i> - Agregamos un link a un archivo llamado reset.css</p>
+<body>
+  <h1>PREGUNTAS</h1>
+  <h2>¿Qué es un CSS?</h2>
+  <p>Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo
+    lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido
+    básico de las páginas.
+  </p>
+  <h2>¿Para qué sirve un CSS?</h2>
+  <p>Con CSS puedes crear reglas para decirle a tu sitio web cómo quieres mostrar la información y guardar
+    los comandos para elementos de estilo (como fuentes, colores, tamaños, etc.) separados de los que configuran
+    el contenido.
+    Además, puedes crear formatos específicos útiles para comunicar tus ideas y producir experiencias más agradables
+    visualmente para los usuarios del sitio web.
+  </p>
+  <h2>¿Cuál es la diferencia que sería más difícil de realizar en un sitio web si se optara por no usar un CSS?</h2>
+  <p>Al momento de realizar el código, ya que con CSS sería algo más sencillo, no tan complejo y más rápido
+  </p>
+
+  <br><br>
+  <hr><br><br>
+  <h1>RESUMEN</h1>
+
+  <h2>El papel del archivo de reset CSS</h2>
+  <p>Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada navegador. </p>
+  <p>CSS nos permite definir estilos para tipos de letra, modificando el tamaño y la fuente, pero hay otros estilos no
+    tan obvios. Por ejemplo: el estilo por defecto para un elemento heading 1 (&lt;h1&gt;) incluye unos márgenes de 10
+    pixels por encima y por debajo del texto. </p>
+  <p>Todos los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy
+    superior a los antiguos, conviene saber que cada motores de restitución empleado por los navegadores aplica sus
+    propias reglas para mostrar los elementos en pantalla. </p>
+  <p>Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de reset que
+    elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. Con este reseteo de
+    valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos. </p>
+  <p>EL uso de hojas de reset CSS puede tener algunas desventajas, sobre todo para los neófitos: tendrán que recordar
+    constantemente que están utilizando dicha hoja de estilos y deben tener en cuenta cómo afectará a los distintos
+    elementos del sitio web. Si estamos aplicando la hoja de reset a todo el sitio, algunos de sus efectos pueden
+    resultar sorprendentes, sobre todo con elementos con los que no estamos especialmente familiarizados. </p>
+  <h2>Breve historia de las técnicas de presentación en pantalla para la Web</h2>
+  <p>Cuando se empezó con el diseño web a mediados de los 90, el único método que se podía emplear para crear
+    estructuras visuales complejas, como por ejemplo la presentación en varias columnas, consistía en emplear el
+    elemento tabla (&lt;table&gt;). </p>
+  <p>En aquel momento esa técnica estaba plenamente justificada: las tablas era lo único que tenían para generar el tipo
+    de diseños que se necesitaban y, además, eran un recurso extremadamente flexible. </p>
+  <p>Para generar esta estructura de tabla, el diseñador tenía que configurar la tabla inicial con una anchura y altura
+    fijas. </p>
+  <p>CSS ha sustituido ya el empleo de tablas para organizar las páginas, por lo que los elementos de tabla de HTML van
+    regresando, poco a poco, a su función original, que es la de mostrar datos estructurados, y abandonan su papel como
+    armazón visual de las páginas. </p>
+
+  <h2>Introducción a las distintas opciones de presentación de páginas</h2>
+  <p>Antes de la estructura visual de nuestras páginas web tenemos que decidir unas cuantas cosas. Lo primero es qué
+    anchura va a tener. Hay dos categorías principales de estructuras en base a su anchura: las de anchura fija y las de
+    ancho variable. </p>
+  <p>En las estructuras de ancho fijo todos los elementos de la página se anidan dentro de un contenedor que tiene un
+    ancho explícito (en este ejemplo utilizamos el valor de 960 pixels, pero se suele utilizar también la unidad de
+    medida em). La anchura fija es una solución muy cómoda para el diseñador ya que permite ubicar con precisión los
+    distintos elementos (cabeceras, barras laterales y pies de página). </p>
+  <p>Las estructuras flexibles se llaman así porque están pensadas para adaptarse a la anchura de la ventana del
+    navegador en cualquier momento. Este tipo de disposiciones es útil cuando los usuarios acceden desde pantallas con
+    resoluciones muy variadas, lo que hace imposible elegir un ancho fijo que ofrezca el mismo aspecto en todas ellas.
+    Una estructura flexible bien diseñada es capaz de ajustarse automáticamente al tamaño de ventana del navegador. </p>
+  <p>Las estructuras de ancho variable son más difíciles de diseñar y obligan al creador a resolver una serie de asuntos
+    adicionales. Por ello, en esta lección vamos a empezar por crear una estructura de anchura fija. </p>
+  <h2>El elemento &lt;div&gt;: creación de una estructura CSS de dos columnas con anchura fija</h2>
+  <p>Podemos considerar al elemento &lt;div&gt; como un contenedor genérico en el que podemos poner elementos
+    relacionados entre sí de forma lógica. La apertura y cierre de etiquetas &lt;div&gt; suele hacerse rodeando a otros
+    elementos de la página, de forma que dichos elementos quedan anidados dentro del contenedor. </p>
+  <h2>La propiedad float CSS</h2>
+  <p>La propiedad float en CSS hace posible que un texto pueda escribirse alrededor de una imagen. Este estilo ha sido
+    tomado del diseño de imprenta, donde a este efecto se le llama “justificación” del texto. CSS consigue el mismo
+    efecto haciendo que los elementos que siguen a un elemento “flotante” puedan rodearlo, cambiando su posición
+    relativa con respecto a él. </p>
+  <p>El valor float se puede también declarar como “left”. En el ejemplo anterior, la imagen pasaría al lado izquierdo
+    del div contenedor, y el texto se empezaría llenando el lado derecho restante. </p>
+  <p>Los únicos valores posibles para float son “left”, “right” y “none”. No se puede centrar un objeto utilizando esta
+    propiedad. </p>
+  <h2>La propiedad clear</h2>
+  <p>Cuando añadimos la propiedad CSS clear a un objeto, le estamos indicando una regla que dice “no admito elementos
+    flotantes a mi lado”. Podemos especificar si queremos que no haya elementos flotantes a la izquierda, a la derecha o
+    en ambos lados. </p>
+  <h2>Creación de un menú de navegación basado en listas con “float” </h2>
+  <p>Los menús de navegación CSS se utilizan mucho en el diseño basado en estándares porque se pueden actualizar y
+    modificar de manera muy sencilla, y porque se basan en textos ( y no en imágenes), lo que mejora la accesibilidad en
+    dispositivos como los lectores de pantalla, e incluso ayudan a mejorar el posicionamiento de nuestras páginas en los
+    buscadores. </p>
 
 
-    <h2>Efecto de los márgenes internos y externos en una estructura de anchura fija</h2>
-    <p>En esta sección vamos a separar las secciones de texto de nuestra página. </p>
-    <p>Básicamente podemos separar el texto del borde izquierdo de dos manera: la primera consiste en utilizar el valor de margen interior o “padding” del contenedor y la segunda, utilizar el margen externo de los objetos contenidos. Vamos a ver ahora los pros y contras de ambas técnicas, empezando por el padding.</p>
-    <p><i>padding:0px 20px 0px 20px;</i></p>
-    <p>El primer valor (0px) es la separación o margen interior con respecto al borde superior. El segundo valor (20px) corresponde a la separación con respecto al margen derecho. El tercero (0px) es la separación con respecto al borde inferior y el ultimo (20px) es el margen interior de separación aplicable al borde izquierdo.</p>
 
-    <h2>Repaso al uso de márgenes internos y externos</h2>
-    <p>El primero consiste en añadir margen interno (padding) al elemento div contenedor. En este caso la ventaja es que todos los elementos dentro de este div se ven afectados al mismo tiempo, es una solución rápida y eficiente. Su desventaja es que aumenta la anchura total del propio contenedor. Para compensar esta expansión, tenemos que dejar algo de espacio adicional a los lados. Este comportamiento puede generar cierta confusión y provocar que las páginas se restituyan incorrectamente si no tenemos cuidado.</p>
-    <p>El segundo método consiste en añadir márgenes externos a los elementos que están dentro del propio div. Su desventaja es que necesitamos más código y hay que prestar atención a los detalles, tenemos que ir viendo cómo se posicionan los elementos individualmente. Su ventaja es que el posicionamiento de la columna es más predecible, puesto que solo tenemos que tener en cuenta una anchura total.</p>
+  <h2>Añadir estilos para el texto</h2>
+  <p>Cuando estamos diseñando la estructura de las páginas, el empleo de hojas de estilo internas es una cuestión de
+    comodidad: resulta más sencillo para crear y modificar reglas si las tenemos dentro de la página y podemos llegar a
+    ellas desplazando la ventana que si las tenemos en un archivo externo.</p>
+  <p><i>link href="reset.css" rel="stylesheet" type="text/css</i> - Agregamos un link a un archivo llamado reset.css</p>
 
 
-    <h2>Diseño anchura fija</h2>
-    <p>En un diseño de anchura fija, el contenedor primario tiene una anchura absoluta (declarada generalmente en pixels o ems) . Una de las ventajas principales de este tipo de diseños es que es más fiable a la hora de colocar los demás elementos. Su desventaja más importante es que no altera su tamaño al cambiar las dimensiones de la ventana del navegador, y algunas funciones como la reorganización de los textos, se pierden.</p>
+  <h2>Efecto de los márgenes internos y externos en una estructura de anchura fija</h2>
+  <p>En esta sección vamos a separar las secciones de texto de nuestra página. </p>
+  <p>Básicamente podemos separar el texto del borde izquierdo de dos manera: la primera consiste en utilizar el valor de
+    margen interior o “padding” del contenedor y la segunda, utilizar el margen externo de los objetos contenidos. Vamos
+    a ver ahora los pros y contras de ambas técnicas, empezando por el padding.</p>
+  <p><i>padding:0px 20px 0px 20px;</i></p>
+  <p>El primer valor (0px) es la separación o margen interior con respecto al borde superior. El segundo valor (20px)
+    corresponde a la separación con respecto al margen derecho. El tercero (0px) es la separación con respecto al borde
+    inferior y el ultimo (20px) es el margen interior de separación aplicable al borde izquierdo.</p>
 
-    <h2>Disño anchura variable</h2>
-    <p>Las estructuras de diseño de ancho variable modifican sus dimensiones dependiendo de la pantalla o dispositivo, pero suponen un trabajo más complicado para el diseñador.</p>
+  <h2>Repaso al uso de márgenes internos y externos</h2>
+  <p>El primero consiste en añadir margen interno (padding) al elemento div contenedor. En este caso la ventaja es que
+    todos los elementos dentro de este div se ven afectados al mismo tiempo, es una solución rápida y eficiente. Su
+    desventaja es que aumenta la anchura total del propio contenedor. Para compensar esta expansión, tenemos que dejar
+    algo de espacio adicional a los lados. Este comportamiento puede generar cierta confusión y provocar que las páginas
+    se restituyan incorrectamente si no tenemos cuidado.</p>
+  <p>El segundo método consiste en añadir márgenes externos a los elementos que están dentro del propio div. Su
+    desventaja es que necesitamos más código y hay que prestar atención a los detalles, tenemos que ir viendo cómo se
+    posicionan los elementos individualmente. Su ventaja es que el posicionamiento de la columna es más predecible,
+    puesto que solo tenemos que tener en cuenta una anchura total.</p>
 
-    <h2>Propiedad Float </h2>
-    <p>La propiedad CSS float permite eliminar cualquier elemento dentro del flujo HTML por defecto y moverlo (o “hacerlo flotar”) pegándolo a la derecha o a la izquierda del contenedor donde está situado. Podemos utilizar la propiedad float cuando queremos que el texto se organice alrededor de imágenes, para crear menús de navegación horizontales o utilizar diseños de página en columnas.</p>
+
+  <h2>Diseño anchura fija</h2>
+  <p>En un diseño de anchura fija, el contenedor primario tiene una anchura absoluta (declarada generalmente en pixels o
+    ems) . Una de las ventajas principales de este tipo de diseños es que es más fiable a la hora de colocar los demás
+    elementos. Su desventaja más importante es que no altera su tamaño al cambiar las dimensiones de la ventana del
+    navegador, y algunas funciones como la reorganización de los textos, se pierden.</p>
+
+  <h2>Disño anchura variable</h2>
+  <p>Las estructuras de diseño de ancho variable modifican sus dimensiones dependiendo de la pantalla o dispositivo,
+    pero suponen un trabajo más complicado para el diseñador.</p>
+
+  <h2>Propiedad Float </h2>
+  <p>La propiedad CSS float permite eliminar cualquier elemento dentro del flujo HTML por defecto y moverlo (o “hacerlo
+    flotar”) pegándolo a la derecha o a la izquierda del contenedor donde está situado. Podemos utilizar la propiedad
+    float cuando queremos que el texto se organice alrededor de imágenes, para crear menús de navegación horizontales o
+    utilizar diseños de página en columnas.</p>
 
 
-
+  <br><br>
+  <hr><br><br>
   <h1>Conclusiones</h1>
-   <h3>Jesus Eduardo Ramirez Garcia 1935217 </h3>
+  <h3>1935217 Jesus Eduardo Ramirez Garcia </h3>
+  <ul>
+    <p>Lo que vimos en esta práctica fue CSS, algo de lo que aprendí fue el comprender un poco más el funcionamiento</p>
+    <p>de este, ya que al momento de investigar descubrí varias cosas, como el que sea un lenguaje un tanto más sencillo
+    </p>
+    <p>al momento de querer darle diseño a una página web mediante HTML, y que al momento de aplicarla sea algo más</p>
+    <p>formal a la visión del usuario que visite esta página.</p>
+
+  </ul>
+
+  <h3>1797608 Jonathan Hesly Soto Mendoza </h3>
+  <ul>
+    <p>un CSS se trata de un idioma como podría ser el inglés o el aleman, que los navegadores web como Chrome o Firefox
+    </p>
+    <p>conocen y pueden entender. Nuestro objetivo como diseñadores y programadores web es precisamente ese: aprender el
+      idioma.</p>
+    <p>y lograr dar estilo y diseño a la pagina con codigo HTML.</p>
+
+  </ul>
+  <<<<<<< HEAD <h3>1667057 Brayan Alejandro Lopez Carranza </h3>
     <ul>
-        <p>Lo que vimos en esta práctica fue CSS, algo de lo que aprendí fue el comprender un poco más el funcionamiento 
-          de este, ya que al momento de investigar descubrí varias cosas, como el que sea un lenguaje un tanto más sencillo 
-          al momento de querer darle diseño a una página web mediante HTML, y que al momento de aplicarla sea algo más formal
-          a la visión del usuario que visite esta página.
-        </p>
-       </ul>
-  
-     <h3>Jonathan Hesly Soto Mendoza 1797608 </h3>
+      <p>Como ya hemos visto, la estrucutura de una pagina web esta hecha gracias a HTML, esto nos ayuda a tener una
+      <p> pagina web mejor estructurada.
+      <p>Pero solo con html, el diseño de la pagina web seria muy pobre ya que el estilo que nos brinda html es muy
+      <p>anticuado y basico. Gracias a esta Leccion
+      <p>aprendimos un poco sobre CSS que como su nombre nos indica, nos ayuda a agregar estilos en cascada, por cascada
+      <p>nos referimos a la forma en la que
+      <p>los estilos se van aplicando a nuestro html y la prioridad que se tiene.</p>
+
+
+      <p>Con CSS nos es mas facil agregar estilos y hacer ver a nuestra pagina web, mas estetica. Con esta herramienta
+      </p>
+      <p>podriamos hacer cambios esteticos a cualquier</p>
+      <p>elemento dentro de nuestro documento. Cambiar colores, fondos, estilos, tamaños, margenes internos, externos,
+      </p>
+      <p>fuentes personalizadas.</p>
+      <p>En resumen CSS nos permite personalizar y estilizar a nuestro gusto cualquier elemento de nuestra pagina web
+      </p>
+      <p>parapoder crear estilos mucho mas embellecidos.</p>
+
+    </ul>
+
+    =======
+    <h3>2109242 César Gerardo Escobedo Alvarado</h3>
     <ul>
-        <p>un CSS se trata de un idioma como podría ser el inglés o el aleman, que los navegadores web como Chrome o Firefox conocen 
-          y pueden entender. Nuestro objetivo como diseñadores y programadores web es precisamente ese: aprender el idioma. y lograr dar 
-          estilo y diseño a la pagina con codigo HTML. 
-        </p>
-       </ul>
-<<<<<<< HEAD
+      <p>Las hojas de estilo cascada o CSS son muy importantes para una pagina web</p>
+      <p>ya que estas le dan una apariencia mas llamativa para el usuario, sin duda</p>
+      <p>alguna me sorprende como en los años 90 los desarrolladores de paginas web</p>
+      <p>utilizaban tablas para poder acomodar todo lo que llevaria su pagina web para</p>
+      <p>esta se viera mas entendible y menos aburrida.</p>
+      <p>En esta pagina aprendi a como usar CSS y lo mejor habia un enlace de descarga de un </p>
+      <p>archivo para practicar sin duda esto es muy bueno ya que hace que la gente tenga iniciativa a</p>
+      <p>aprender.</p>
+    </ul>
 
-       <h3>Brayan Alejandro Lopez Carranza 1667057</h3>
-       <p>Como ya hemos visto, la estrucutura de una pagina web esta hecha gracias a HTML, esto nos ayuda a tener una pagina web mejor estructurada.
-          Pero solo con html, el diseño de la pagina web seria muy pobre ya que el estilo que nos brinda html es muy anticuado y basico. Gracias a esta Leccion
-          aprendimos un poco sobre CSS que como su nombre nos indica, nos ayuda a agregar estilos en cascada, por cascada nos referimos a la forma en la que
-          los estilos se van aplicando a nuestro html y la prioridad que se tiene.
-       </p>
+    <h3>1850655 Oliver Eduardo Ramos Trigo</h3>
+    <ul>
+      <p>El uso de css es muy importante en el entorno de programación web debido a que nos facilita mucho el Uso de</p>
+      <p>estilos fijos en páginas, ya que al estar usando css no debemos de agregar el Estilo directamente en cada
+        página</p>
+      <p>de html y se harían más cortos nuestros códigos y podríamos usar estilos predeterminados posible para cada</p>
+      <p>página de html, por ejemplo, si queremos que nuestra página tenga un tipo de letra determinado, un color de</p>
+      <p>fondo, un color de texto, algún tamaño de letra, con css eso lo podemos hacer para que el estilo sea</p>
+      <p>predeterminado de todas las páginas que contenga nuestro sitio web. Es por ello que el uso de css es muy</p>
+      <p>importante, ya que nos ahorra el hecho de estar codificando a cada rato lo mismo y hace más estructurados y</p>
+      <p>sencillos nuestros códigos.</p>
 
-       <p>Con CSS nos es mas facil agregar estilos y hacer ver a nuestra pagina web, mas estetica. Con esta herramienta podriamos hacer cambios esteticos a cualquier
-          elemento dentro de nuestro documento. Cambiar colores, fondos, estilos, tamaños, margenes internos, externos, fuentes personalizadas. 
-          En resumen CSS nos permite personalizar y estilizar a nuestro gusto cualquier elemento de nuestra pagina web para poder crear estilos mucho mas embellecidos.
+    </ul>
 
-       </p>
-       
-=======
-     <p>2109242 César Gerardo Escobedo Alvarado</p>
-     <ul><p>Las hojas de estilo cascada o CSS son muy importantes para una pagina web</p>
-    <p>ya que estas le dan una apariencia mas llamativa para el usuario, sin duda</p>
-    <p>alguna me sorprende como en los años 90 los desarrolladores de paginas web</p>
-    <p>utilizaban tablas para poder acomodar todo lo que llevaria su pagina web para</p>
-    <p>esta se viera mas entendible y menos aburrida.</p>
-    <p>En esta pagina aprendi a como usar CSS y lo mejor habia un enlace de descarga de un </p>
-    <p>archivo para practicar sin duda esto es muy bueno ya que hace que la gente tenga iniciativa a</p>
-    <p>aprender.</p></ul>
-  
-  
->>>>>>> 573402a05a6089758043129a22afb4c22edb35c9
-       <br><br>
-       <hr><br><br>
-       
-  <footer>
-    <a id="ai" href="practica2.html">ANTERIOR</a>
-    <a href="index.html">INDEX</a>
-    <a id="ad" href="practica4.html">SIGUIENTE</a>
-  </footer>
-   </body> 
-  </html>
+    >>>>>>> 573402a05a6089758043129a22afb4c22edb35c9
+    <br><br>
+    <hr><br><br>
 
+    <footer>
+      <a id="ai" href="practica2.html">ANTERIOR</a>
+      <a href="index.html">INDEX</a>
+      <a id="ad" href="practica4.html">SIGUIENTE</a>
+    </footer>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
