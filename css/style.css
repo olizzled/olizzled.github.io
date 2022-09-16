@@ -9,8 +9,31 @@ body{
     background-color: black;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, li{
     color: white;
 }
 
+footer{
+    color: white;
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    position:fixed;
+   left:0px;
+   bottom:0px;
 
+}
+
+#ai{
+    float: left;
+}
+
+#ad{
+    float: right;
+}
+
+#ac{
+    float: center;
+}
