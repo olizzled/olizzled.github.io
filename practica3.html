@@ -25,8 +25,35 @@
     <p>Al momento de realizar el código, ya que con CSS sería algo más sencillo, no tan complejo y más rápido
     </p>  
 
+    <h2>Añadir estilos para el texto</h2>
+    <p>Cuando estamos diseñando la estructura de las páginas, el empleo de hojas de estilo internas es una cuestión de comodidad: resulta más sencillo para crear y modificar reglas si las tenemos dentro de la página y podemos llegar a ellas desplazando la ventana que si las tenemos en un archivo externo.</p>
+    <p><i>link href="reset.css" rel="stylesheet" type="text/css</i> - Agregamos un link a un archivo llamado reset.css</p>
+
+
+    <h2>Efecto de los márgenes internos y externos en una estructura de anchura fija</h2>
+    <p>En esta sección vamos a separar las secciones de texto de nuestra página. </p>
+    <p>Básicamente podemos separar el texto del borde izquierdo de dos manera: la primera consiste en utilizar el valor de margen interior o “padding” del contenedor y la segunda, utilizar el margen externo de los objetos contenidos. Vamos a ver ahora los pros y contras de ambas técnicas, empezando por el padding.</p>
+    <p><i>padding:0px 20px 0px 20px;</i></p>
+    <p>El primer valor (0px) es la separación o margen interior con respecto al borde superior. El segundo valor (20px) corresponde a la separación con respecto al margen derecho. El tercero (0px) es la separación con respecto al borde inferior y el ultimo (20px) es el margen interior de separación aplicable al borde izquierdo.</p>
+
+    <h2>Repaso al uso de márgenes internos y externos</h2>
+    <p>El primero consiste en añadir margen interno (padding) al elemento div contenedor. En este caso la ventaja es que todos los elementos dentro de este div se ven afectados al mismo tiempo, es una solución rápida y eficiente. Su desventaja es que aumenta la anchura total del propio contenedor. Para compensar esta expansión, tenemos que dejar algo de espacio adicional a los lados. Este comportamiento puede generar cierta confusión y provocar que las páginas se restituyan incorrectamente si no tenemos cuidado.</p>
+    <p>El segundo método consiste en añadir márgenes externos a los elementos que están dentro del propio div. Su desventaja es que necesitamos más código y hay que prestar atención a los detalles, tenemos que ir viendo cómo se posicionan los elementos individualmente. Su ventaja es que el posicionamiento de la columna es más predecible, puesto que solo tenemos que tener en cuenta una anchura total.</p>
+
+
+    <h2>Diseño anchura fija</h2>
+    <p>En un diseño de anchura fija, el contenedor primario tiene una anchura absoluta (declarada generalmente en pixels o ems) . Una de las ventajas principales de este tipo de diseños es que es más fiable a la hora de colocar los demás elementos. Su desventaja más importante es que no altera su tamaño al cambiar las dimensiones de la ventana del navegador, y algunas funciones como la reorganización de los textos, se pierden.</p>
+
+    <h2>Disño anchura variable</h2>
+    <p>Las estructuras de diseño de ancho variable modifican sus dimensiones dependiendo de la pantalla o dispositivo, pero suponen un trabajo más complicado para el diseñador.</p>
+
+    <h2>Propiedad Float </h2>
+    <p>La propiedad CSS float permite eliminar cualquier elemento dentro del flujo HTML por defecto y moverlo (o “hacerlo flotar”) pegándolo a la derecha o a la izquierda del contenedor donde está situado. Podemos utilizar la propiedad float cuando queremos que el texto se organice alrededor de imágenes, para crear menús de navegación horizontales o utilizar diseños de página en columnas.</p>
+
+
+
   <h1>Conclusiones</h1>
-   <p>Jesus Eduardo Ramirez Garcia 1935217 </p>
+   <h3>Jesus Eduardo Ramirez Garcia 1935217 </h3>
     <ul>
         <p>Lo que vimos en esta práctica fue CSS, algo de lo que aprendí fue el comprender un poco más el funcionamiento 
           de este, ya que al momento de investigar descubrí varias cosas, como el que sea un lenguaje un tanto más sencillo 
@@ -35,15 +62,27 @@
         </p>
        </ul>
   
-     <p>Jonathan Hesly Soto Mendoza 1797608 </p>
+     <h3>Jonathan Hesly Soto Mendoza 1797608 </h3>
     <ul>
         <p>un CSS se trata de un idioma como podría ser el inglés o el aleman, que los navegadores web como Chrome o Firefox conocen 
           y pueden entender. Nuestro objetivo como diseñadores y programadores web es precisamente ese: aprender el idioma. y lograr dar 
           estilo y diseño a la pagina con codigo HTML. 
         </p>
        </ul>
-  
-  
+
+       <h3>Brayan Alejandro Lopez Carranza 1667057</h3>
+       <p>Como ya hemos visto, la estrucutura de una pagina web esta hecha gracias a HTML, esto nos ayuda a tener una pagina web mejor estructurada.
+          Pero solo con html, el diseño de la pagina web seria muy pobre ya que el estilo que nos brinda html es muy anticuado y basico. Gracias a esta Leccion
+          aprendimos un poco sobre CSS que como su nombre nos indica, nos ayuda a agregar estilos en cascada, por cascada nos referimos a la forma en la que
+          los estilos se van aplicando a nuestro html y la prioridad que se tiene.
+       </p>
+
+       <p>Con CSS nos es mas facil agregar estilos y hacer ver a nuestra pagina web, mas estetica. Con esta herramienta podriamos hacer cambios esteticos a cualquier
+          elemento dentro de nuestro documento. Cambiar colores, fondos, estilos, tamaños, margenes internos, externos, fuentes personalizadas. 
+          En resumen CSS nos permite personalizar y estilizar a nuestro gusto cualquier elemento de nuestra pagina web para poder crear estilos mucho mas embellecidos.
+
+       </p>
+       
        <br><br>
        <hr><br><br>
        
