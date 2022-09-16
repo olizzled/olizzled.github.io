@@ -18,7 +18,7 @@ footer{
     background-color: white;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
     position:fixed;
    left:0px;
@@ -34,6 +34,3 @@ footer{
     float: right;
 }
 
-#ac{
-    float: center;
-}
