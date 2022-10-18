@@ -1,89 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>Practica 1- Conceptos</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Definicion de conceptos</h1>
-    <p><strong>Direccion IP</strong>: 
-        Una dirección IP es una dirección única que identifica a un dispositivo en Internet o en una red local. IP significa “protocolo de Internet”, que es el conjunto de reglas que rigen el formato de los datos enviados a través de Internet o la red local.
-        
-        <p>En esencia, las direcciones IP son el identificador que permite el envío de información entre dispositivos en una red. Contienen información de la ubicación y brindan a los dispositivos acceso de comunicación. Internet necesita una forma de diferenciar entre distintas computadoras, enrutadores y sitios web. Las direcciones IP proporcionan una forma de hacerlo y forman una parte esencial de cómo funciona Internet.</p>
-        <p>Una dirección IP es una cadena de números separados por puntos. Las direcciones IP se expresan como un conjunto de cuatro números, por ejemplo, 192.158.1.38. Cada número del conjunto puede variar de 0 a 255. Por lo tanto, el rango completo de direcciones IP va desde 0.0.0.0 hasta 255.255.255.255.</p>
-    </p>
 
-    <p><strong>Tipo de direcciones IP</strong>:
-        Las <strong>direcciones IP dinámicas</strong> cambian de forma automática y con regularidad. Los ISP compran un gran grupo de direcciones IP y las asignan automáticamente a sus clientes. De forma periódica, reasignan y devuelven las direcciones IP más antiguas al grupo para que las utilicen otros clientes. La explicación detrás de esta estrategia es generar ahorros para el ISP. Automatizar el movimiento regular de las direcciones IP significa que no es necesario realizar acciones específicas para restablecer la dirección IP de un cliente, por ejemplo, si se muda de casa. También existen beneficios de seguridad, ya que una dirección IP cambiante facilita a los delincuentes el pirateo de la interfaz de red.
-        <p>Por el contrario, las <strong>direcciones IP estáticas</strong> son siempre las mismas. Una vez que la red asigna una dirección IP, esta permanece igual. La mayoría de las personas y empresas no necesitan una dirección IP estática, pero para las empresas que planean alojar su propio servidor, es fundamental tener una. Esto se debe a que una dirección IP estática garantiza que los sitios web y las direcciones de correo electrónico vinculados tengan una dirección IP constante, lo que es vital si desea que otros dispositivos puedan encontrarlos de manera predecible en la Web.</p>
-        <p>Por lo general, los sitios web que dependen de planes de alojamiento compartidos pertenecientes a los proveedores de alojamiento web serán uno de los numerosos sitios web alojados en el mismo servidor. Este suele ser el caso cuando se trata de sitios web individuales o sitios web de expertos en la materia (Subject Matter Expert, SME), en los que los volúmenes de tráfico son manejables y los sitios mismos están limitados en términos de la cantidad de páginas, etc. Los sitios web alojados de esta manera tendrán <strong>direcciones IP compartidas</strong>.</p>
-        <p>Algunos planes de alojamiento web tienen la opción de comprar una dirección IP dedicada (o varias). Esto puede facilitar la obtención de un certificado SSL y te permite ejecutar tu propio servidor de protocolo de transferencia de archivos (FTP). De esta forma, se facilita el uso compartido y la transferencia de archivos con varias personas dentro de una organización y se permiten opciones de uso compartido de FTP anónimo. Una <strong>dirección IP dedicada</strong> también te permite acceder a tu sitio web solo con la dirección IP, en lugar del nombre de dominio, lo que resulta útil si deseas desarrollarlo y probarlo antes de registrar tu dominio.</p>
-    </p>
-    <p><strong>MAC adress</strong>: En las redes de computadoras, la dirección MAC es un identificador de 48 bits que corresponde de forma única a una tarjeta o dispositivo de red. Se la conoce también como dirección física, y es única para cada dispositivo.</p>
-    <p><strong>ISP</strong>: El proveedor de servicios de internet (ISP, por las siglas de Internet Service Provider) es la empresa que brinda conexión a Internet a sus clientes. Un ISP conecta a sus usuarios a Internet a través de diferentes tecnologías como ADSL, cablemódem, GSM, dial-up, fibra óptica, satélite, streaming, etc.</p>
-    <p><strong>Puertos bien conocidos</strong>: La numeración de los puertos se establece mediante una cadena de 16 bits o 2 bytes. De esta manera, tenemos un número total de 65536 puertos, que están numerados desde el 0 al 65536. Cada puerto puede ser utilizado por cualquier protocolo, aunque se crean ciertos estándares y reglas para que un protocolo use siempre los mismos puertos.
-        <p>La Autoridad para la Asignación de Números de Internet IANA (Internet Assigned Numbers Authority) es la entidad encargada de la asignación de puertos.</p>
-        <p><strong>Bien conocidos</strong>: Estos son los puestos comprendidos en el rango de 0 a 1024. Están reservados para el sistema operativo y para protocolos bien conocidos. Dentro de estos protocolos tenemos el protocolo HTTP, de correo electrónico POP3 y SMTP y Telnet. Para poder usar algunos de estos puertos es necesario contar con permisos de administración en el ordenador.</p>
-    </p>
-    <p><strong>Protocolo TCP/IP</strong>:
-        <p><strong>TCP: </strong>es el Protocolo de Control de Transmisión que permite establecer una conexión y el intercambio de datos entre dos anfitriones. Este protocolo proporciona un transporte fiable de datos.</p>
-        <p><strong>TCP/IP:</strong> es la identificación del grupo de protocolos de red que hacen posible la transferencia de datos en redes, entre equipos informáticos e internet.</p>
-        <p>El modelo TCP/IP permite un intercambio de datos fiable dentro de una red, definiendo los pasos a seguir desde que se envían los datos (en paquetes) hasta que son recibidos.</p>
-        <p><strong>Capas del modelo TCP/IP:</strong> Dentro del modelo TCP/IP existen cuatro niveles o capas que hay que tener en cuenta.</p>
-        <p><strong>Nivel de enlace o acceso a la red:</strong> es la primera capa del modelo y ofrece la posibilidad de acceso físico a la red (que bien puede ser en anillo, ethernet, etc.), especificando el modo en que los datos deben enrutarse independientemente del tipo de red utilizado.</p>
-        <p><strong>Nivel de red o Internet: </strong>proporciona el paquete de datos o datagramas y administra las direcciones IP. (Los datagramas son paquetes de datos que constituyen el mínimo de información en una red). Esta capa es considerada la más importante y engloba protocolos como IP, ARP, ICMP, IGMP y RARP.</p>
-        <p><strong>Nivel de Transporte: </strong>permiten conocer el estado de la transmisión, así como los datos de enrutamiento y utilizan los puertos para asociar un tipo de aplicación con un tipo de dato.</p>
-        <p><strong>Nivel de Aplicación: </strong>es la parte superior del protocolo TCP/IP y suministra las aplicaciones de red tip Telnet, FTP o SMTP, que se comunican con las capas anteriores (con protocolos TCP o UDP).</p>
+<body class="bg-dark">
+
+    <nav class="nav bg-light shadow sticky-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 bg-dark text-center pt-4 border-1 border-light border" >
+                    <a href="index.html" class="text-light">
+                        <p class="fs-4 fw-bolder" style="height: 100%;"> Inicio </p>
+                    </a>
+                </div>
+                <div class="col-9 text-center">
+                    <p class="display-4 fw-bolder py-2">Practica 1 - Definicion de conceptos</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid mt-3" id="index_table">
+        <div class="row">
+            <div class="col bg-light mx-3 rounded pt-2 position-fixed shadow" style="max-width: 23%; max-height: 600px">
+                <!-- <p class="fs-6 text-center border-bottom border-1 py-1">Index</p> -->
+
+                <a href="practica1.html#direccion_ip" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Direccion IP</p>
+                </a>
+
+                <a href="practica1.html#mac" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">MAC Adress</p>
+                </a>
+
+                <a href="practica1.html#isp" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">ISP</p>
+                </a>
+
+                <a href="practica1.html#puertos" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Puertos bien conocidos</p>
+                </a>
+
+                <a href="practica1.html#protocolo" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Protocolo TCP/IP</p>
+                </a>
+
+                <a href="practica1.html#redireccionamiento" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Redireccionamiento de puertos</p>
+                </a>
+
+                <a href="practica1.html#servidor" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Servidor de paginas web</p>
+                </a>
+
+                <a href="practica1.html#puerta_enlace" class="text-decoration-none text-black-50 fw-bolder" >
+                    <p class="border-bottom border-1">Puerta de enlace</p>
+                </a>
+
+                <a href="practica1.html#ip_publicas" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Direcciones IP Publicas y Privadas</p>
+                </a>
+
+                <a href="practica1.html#dns" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">DNS</p>
+                </a>
+
+                <a href="practica1.html#firewall" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Firewall</p>
+                </a>
+
+                <a href="practica1.html#web_hosting" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">Web Hosting y Dominio</p>
+                </a>
+
+                <a href="practica1.html#ftp" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">FTP</p>
+                </a>
+
+                <a href="practica1.html#html" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">HTML</p>
+                </a>
+
+                <a href="practica1.html#css" class="text-decoration-none text-black-50 fw-bolder">
+                    <p class="border-bottom border-1">CSS</p>
+                </a>
+
+            </div>
+
+            <div class="col  px-5 me-3 text-light" style="margin-left: 24%;" >
+
+                <p class="display-6 border-bottom border-1 py-1 text-center" id="direccion_ip">Direccion IP</p>
+                    <p>Una dirección IP es una dirección única que identifica a un dispositivo en Internet o en una red
+                        local. IP significa “protocolo de Internet”, que es el conjunto de reglas que rigen el formato
+                        de los datos enviados a través de Internet o la red local.</p>
+                    <p>En esencia, las direcciones IP son el identificador que permite el envío de información entre
+                        dispositivos en una red. Contienen información de la ubicación y brindan a los dispositivos
+                        acceso de comunicación. Internet necesita una forma de diferenciar entre distintas computadoras,
+                        enrutadores y sitios web. Las direcciones IP proporcionan una forma de hacerlo y forman una
+                        parte esencial de cómo funciona Internet.</p>
+                    <p>Una dirección IP es una cadena de números separados por puntos. Las direcciones IP se expresan
+                        como un conjunto de cuatro números, por ejemplo, 192.158.1.38. Cada número del conjunto puede
+                        variar de 0 a 255. Por lo tanto, el rango completo de direcciones IP va desde 0.0.0.0 hasta
+                        255.255.255.255.</p>
 
 
 
-    </p>
-    <p><strong>Redireccionamiento de Puertos</strong>: La redirección de puertos, a veces llamado tunelado de puertos, es la acción de redirigir un puerto de red de un nodo de red a otro. Esta técnica puede permitir que un usuario externo tenga acceso a un puerto en una dirección IP privada (dentro de una LAN) desde el exterior vía un router con NAT activado.</p>
-    <p><strong>Servidor de paginas web</strong>: Un servidor web o servidor HTTP es un programa informático que procesa una aplicación del lado del servidor, realizando conexiones bidireccionales o unidireccionales y síncronas o asíncronas con el cliente y generando o cediendo una respuesta en cualquier lenguaje o aplicación del lado del cliente.</p>
-    <p><strong>Puerta de enlace</strong>: es el dispositivo que actúa de interfaz de conexión entre aparatos o dispositivos, y también posibilita compartir recursos entre dos o más ordenadores.</p>
-    <p><strong>Direcciones IP publicas y privadas</strong>:
-        <p>Cada dispositivo que se conecta a tu red de Internet tiene una <strong>dirección IP privada</strong>. Esto incluye computadoras, teléfonos y tablets, pero también cualquier dispositivo que pueda conectarse mediante Bluetooth, como los altavoces, impresoras o televisores inteligentes. Con el creciente Internet de las cosas, la cantidad de direcciones IP privadas que tienes en casa probablemente está aumentando. El enrutador necesita una forma de identificar estos artículos por separado y muchos necesitan una forma de reconocerse entre sí. Por lo tanto, tu enrutador genera direcciones IP privadas que son identificadores únicos para cada dispositivo que los diferencian dentro la red.</p>
-        <p>Una <strong>dirección IP pública</strong> es la dirección principal asociada a toda la red. Si bien cada dispositivo conectado tiene su propia dirección IP, también se incluyen en la dirección IP principal de la red. Como se describió anteriormente, tu ISP proporciona la dirección IP pública de tu enrutador. Normalmente, los ISP tienen un gran conjunto de direcciones IP que distribuyen a sus clientes. Tu dirección IP pública es la dirección que todos los dispositivos fuera de tu red de Internet utilizarán para reconocer tu red. Las direcciones IP públicas se presentan de dos formas: <strong>dinámica</strong> y <strong>estática</strong>.</p>
-    </p>
-    <p><strong>DNS</strong>: El sistema de nombres de dominio  es un sistema de nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una red privada. Este sistema asocia información variada con nombres de dominio asignados a cada uno de los participantes.</p>
-    <p><strong>Firewall</strong>: Un firewall es un dispositivo de seguridad de la red que monitorea el tráfico de red —entrante y saliente— y decide si permite o bloquea tráfico específico en función de un conjunto definido de reglas de seguridad.
-        <p><strong>Tipos de firewalls:</strong>
-            <p><strong>Firewall de inspección activa:</strong> Un firewall de inspección activa, que ahora se considera un firewall “tradicional”, permite o bloquea el tráfico en función del estado, el puerto y el protocolo. Monitorea toda la actividad desde la apertura hasta el cierre de una conexión. Las decisiones de filtrado se toman de acuerdo con las reglas definidas por el administrador y con el contexto.</p>
-            <p><strong>Firewall de administración unificada de amenazas (UTM): </strong>Un dispositivo UTM suele combinar de forma flexible las funciones de un firewall de inspección activa con prevención de intrusiones y antivirus. Además, puede incluir servicios adicionales y, a menudo, administración de la nube.</p>
-            <p><strong>Firewall de próxima generación (NGFW): </strong>Los firewalls han evolucionado más allá de la inspección activa y el filtrado simple de paquetes. La mayoría de las empresas están implementando firewalls de próxima generación para bloquear las amenazas modernas.</p>
-        
-        
-        
-        </p>
-    </p>
-    <p><strong>Web Hosting y Dominio</strong>
-        <p><strong>Web hosting: </strong>es un servicio para alojar sitios web, es decir, todos los contenidos de tus páginas web para que las personas puedan acceder a él en todo momento a través de diferentes dispositivos siempre que tengan conexión a internet.
-            <p><strong>Tipos de hosting:</strong>
-                <p><strong>Hosting Compartido: </strong>En este tipo de hosting (shared hosting) , se alojan varios sitios web en un mismo servidor. Así, todos los clientes del proveedor comparten los recursos de dicho servidor, como el CPU, procesador, memoria RAM, ancho de banda, dirección IP y/o la transferencia mensual de datos.</p>
-                <p><strong>Hosting Privado Virtual (VPS): </strong>Un VPS, es un servicio de almacenamiento web caracterizado por ser un servidor físico fraccionado virtualmente de forma independiente, es decir, cada proyecto trabaja con su propio sistema operativo y no comparte recursos con otros.</p>
-                <p><strong>Servidor Dedicado:</strong> Es aquel cuyo uso exclusivo es de un solo cliente, por lo que el servidor no se comparte con otros proyectos.</p>
-                <p><strong>Hosting en la nube (Cloud Hosting): </strong> Este tipo de hosting distribuye los proyectos en varios servidores interconectados en una nube por lo que no estará alojado en un solo servidor.</p>
-            </p>
-        
-        
-        </p>
-        <p><strong>Dominio: </strong>Un dominio de internet es un nombre único que identifica a una subárea de Internet. El propósito principal de los nombres de dominio en Internet y del sistema de nombres de dominio (DNS), es traducir las direcciones IP de cada activo en la red, a términos memorizables y fáciles de encontrar. Esta abstracción hace posible que cualquier servicio (de red) pueda moverse de un lugar geográfico a otro en Internet, aun cuando el cambio implique que tendrá una dirección IP diferente</p>
-        
-    
-    
-    </p>
-    <p><strong>FTP</strong>: FTP es un protocolo que se utiliza para transferir todo tipo de archivos entre equipos conectados a una red, por ejemplo Internet. Las cuentas de FTP son el medio estándar para gestionar el contenido alojado en un servidor web: enviar archivos, descargarlos, crear directorios, borrar ficheros, etc.</p>
-    <p><strong>HTML</strong>: (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web.</p>
-    <p><strong>CSS</strong>: Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.</p>
-    <br><br>
-    <hr><br><br>
-    <footer>
-        <a id="ai" href="index.html">ANTERIOR</a>
-        <a href="index.html">INDEX</a>
-        <a id="ad" href="practica2.html">SIGUIENTE</a>
-    </footer>
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="tipos_direcciones">Tipos de direcciones IP</p>
+                        <p>Las <strong>direcciones IP dinámicas</strong> cambian de forma automática y con regularidad. Los ISP
+                            compran un gran grupo de direcciones IP y las asignan automáticamente a sus clientes. De forma
+                            periódica, reasignan y devuelven las direcciones IP más antiguas al grupo para que las utilicen
+                            otros clientes. La explicación detrás de esta estrategia es generar ahorros para el ISP. Automatizar
+                            el movimiento regular de las direcciones IP significa que no es necesario realizar acciones
+                            específicas para restablecer la dirección IP de un cliente, por ejemplo, si se muda de casa. También
+                            existen beneficios de seguridad, ya que una dirección IP cambiante facilita a los delincuentes el
+                            pirateo de la interfaz de red.</p>
+                        <p>Por el contrario, las <strong>direcciones IP estáticas</strong> son siempre las mismas. Una vez
+                            que la red asigna una dirección IP, esta permanece igual. La mayoría de las personas y empresas
+                            no necesitan una dirección IP estática, pero para las empresas que planean alojar su propio
+                            servidor, es fundamental tener una. Esto se debe a que una dirección IP estática garantiza que
+                            los sitios web y las direcciones de correo electrónico vinculados tengan una dirección IP
+                            constante, lo que es vital si desea que otros dispositivos puedan encontrarlos de manera
+                            predecible en la Web.</p>
+                        <p>Por lo general, los sitios web que dependen de planes de alojamiento compartidos pertenecientes a
+                            los proveedores de alojamiento web serán uno de los numerosos sitios web alojados en el mismo
+                            servidor. Este suele ser el caso cuando se trata de sitios web individuales o sitios web de
+                            expertos en la materia (Subject Matter Expert, SME), en los que los volúmenes de tráfico son
+                            manejables y los sitios mismos están limitados en términos de la cantidad de páginas, etc. Los
+                            sitios web alojados de esta manera tendrán <strong>direcciones IP compartidas</strong>.</p>
+                        <p>Algunos planes de alojamiento web tienen la opción de comprar una dirección IP dedicada (o
+                            varias). Esto puede facilitar la obtención de un certificado SSL y te permite ejecutar tu propio
+                            servidor de protocolo de transferencia de archivos (FTP). De esta forma, se facilita el uso
+                            compartido y la transferencia de archivos con varias personas dentro de una organización y se
+                            permiten opciones de uso compartido de FTP anónimo. Una <strong>dirección IP dedicada</strong>
+                            también te permite acceder a tu sitio web solo con la dirección IP, en lugar del nombre de
+                            dominio, lo que resulta útil si deseas desarrollarlo y probarlo antes de registrar tu dominio.
+                        </p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="mac">MAC Adress</p>
+                        <p><strong>MAC adress</strong>: En las redes de computadoras, la dirección MAC es un identificador de 48 bits que
+                            corresponde de forma única a una tarjeta o dispositivo de red. Se la conoce también como dirección física, y es
+                            única para cada dispositivo.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="isp">ISP</p>
+                            <p><strong>ISP</strong>: El proveedor de servicios de internet (ISP, por las siglas de Internet Service Provider) es
+        la empresa que brinda conexión a Internet a sus clientes. Un ISP conecta a sus usuarios a Internet a través de
+        diferentes tecnologías como ADSL, cablemódem, GSM, dial-up, fibra óptica, satélite, streaming, etc.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="puertos">Puertos bien conocidos</p>
+                        <p><strong>Puertos bien conocidos</strong>: La numeración de los puertos se establece mediante una cadena de 16 bits
+                            o 2 bytes. De esta manera, tenemos un número total de 65536 puertos, que están numerados desde el 0 al 65536.
+                            Cada puerto puede ser utilizado por cualquier protocolo, aunque se crean ciertos estándares y reglas para que un
+                            protocolo use siempre los mismos puertos.</p>
+                        <p>La Autoridad para la Asignación de Números de Internet IANA (Internet Assigned Numbers Authority) es la entidad
+                            encargada de la asignación de puertos.</p>
+                        <p><strong>Bien conocidos</strong>: Estos son los puestos comprendidos en el rango de 0 a 1024. Están reservados
+                            para el sistema operativo y para protocolos bien conocidos. Dentro de estos protocolos tenemos el protocolo
+                            HTTP, de correo electrónico POP3 y SMTP y Telnet. Para poder usar algunos de estos puertos es necesario contar
+                            con permisos de administración en el ordenador.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="protocolo">Protocolo TCP/IP</p>
+                        <p><strong>Protocolo TCP/IP</strong>:
+                            <p><strong>TCP: </strong>es el Protocolo de Control de Transmisión que permite establecer una conexión y el
+                                intercambio de datos entre dos anfitriones. Este protocolo proporciona un transporte fiable de datos.</p>
+                            <p><strong>TCP/IP:</strong> es la identificación del grupo de protocolos de red que hacen posible la transferencia
+                                de datos en redes, entre equipos informáticos e internet.</p>
+                            <p>El modelo TCP/IP permite un intercambio de datos fiable dentro de una red, definiendo los pasos a seguir desde
+                                que se envían los datos (en paquetes) hasta que son recibidos.</p>
+                            <p><strong>Capas del modelo TCP/IP:</strong> Dentro del modelo TCP/IP existen cuatro niveles o capas que hay que
+                                tener en cuenta.</p>
+                            <p><strong>Nivel de enlace o acceso a la red:</strong> es la primera capa del modelo y ofrece la posibilidad de
+                                acceso físico a la red (que bien puede ser en anillo, ethernet, etc.), especificando el modo en que los datos
+                                deben enrutarse independientemente del tipo de red utilizado.</p>
+                            <p><strong>Nivel de red o Internet: </strong>proporciona el paquete de datos o datagramas y administra las
+                                direcciones IP. (Los datagramas son paquetes de datos que constituyen el mínimo de información en una red). Esta
+                                capa es considerada la más importante y engloba protocolos como IP, ARP, ICMP, IGMP y RARP.</p>
+                            <p><strong>Nivel de Transporte: </strong>permiten conocer el estado de la transmisión, así como los datos de
+                                enrutamiento y utilizan los puertos para asociar un tipo de aplicación con un tipo de dato.</p>
+                            <p><strong>Nivel de Aplicación: </strong>es la parte superior del protocolo TCP/IP y suministra las aplicaciones de
+                                red tip Telnet, FTP o SMTP, que se comunican con las capas anteriores (con protocolos TCP o UDP).</p>
+                                </p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="redireccionamiento">Redireccionamiento de puertos</p>
+                        <p><strong>Redireccionamiento de Puertos</strong>: La redirección de puertos, a veces llamado tunelado de puertos,
+                            es la acción de redirigir un puerto de red de un nodo de red a otro. Esta técnica puede permitir que un usuario
+                            externo tenga acceso a un puerto en una dirección IP privada (dentro de una LAN) desde el exterior vía un router
+                            con NAT activado.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="servidor">Servidor de paginas web</p>
+                        <p><strong>Servidor de paginas web</strong>: Un servidor web o servidor HTTP es un programa informático que procesa
+                            una aplicación del lado del servidor, realizando conexiones bidireccionales o unidireccionales y síncronas o
+                            asíncronas con el cliente y generando o cediendo una respuesta en cualquier lenguaje o aplicación del lado del
+                            cliente.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="puerta_enlace">Puerta de enlace</p>
+                        <p><strong>Puerta de enlace</strong>: es el dispositivo que actúa de interfaz de conexión entre aparatos o
+                            dispositivos, y también posibilita compartir recursos entre dos o más ordenadores.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="ip_publicas">Direcciones IP Publicas y Privadas</p>
+                        <p><strong>Direcciones IP publicas y privadas</strong>:
+                            <p>Cada dispositivo que se conecta a tu red de Internet tiene una <strong>dirección IP privada</strong>. Esto
+                                incluye computadoras, teléfonos y tablets, pero también cualquier dispositivo que pueda conectarse mediante
+                                Bluetooth, como los altavoces, impresoras o televisores inteligentes. Con el creciente Internet de las cosas, la
+                                cantidad de direcciones IP privadas que tienes en casa probablemente está aumentando. El enrutador necesita una
+                                forma de identificar estos artículos por separado y muchos necesitan una forma de reconocerse entre sí. Por lo
+                                tanto, tu enrutador genera direcciones IP privadas que son identificadores únicos para cada dispositivo que los
+                                diferencian dentro la red.</p>
+                            <p>Una <strong>dirección IP pública</strong> es la dirección principal asociada a toda la red. Si bien cada
+                                dispositivo conectado tiene su propia dirección IP, también se incluyen en la dirección IP principal de la red.
+                                Como se describió anteriormente, tu ISP proporciona la dirección IP pública de tu enrutador. Normalmente, los
+                                ISP tienen un gran conjunto de direcciones IP que distribuyen a sus clientes. Tu dirección IP pública es la
+                                dirección que todos los dispositivos fuera de tu red de Internet utilizarán para reconocer tu red. Las
+                                direcciones IP públicas se presentan de dos formas: <strong>dinámica</strong> y <strong>estática</strong>.</p>
+                            </p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="dns">DNS</p>
+                        <p><strong>DNS</strong>: El sistema de nombres de dominio es un sistema de nomenclatura jerárquico descentralizado
+                            para dispositivos conectados a redes IP como Internet o una red privada. Este sistema asocia información variada
+                            con nombres de dominio asignados a cada uno de los participantes.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="firewall">FireWall</p>
+                        <p><strong>Firewall</strong>: Un firewall es un dispositivo de seguridad de la red que monitorea el tráfico de red
+                            —entrante y saliente— y decide si permite o bloquea tráfico específico en función de un conjunto definido de
+                            reglas de seguridad.</p>
+                        <p><strong>Tipos de firewalls:</strong></p>
+                        <p><strong>Firewall de inspección activa:</strong> Un firewall de inspección activa, que ahora se considera un
+                            firewall “tradicional”, permite o bloquea el tráfico en función del estado, el puerto y el protocolo. Monitorea
+                            toda la actividad desde la apertura hasta el cierre de una conexión. Las decisiones de filtrado se toman de
+                            acuerdo con las reglas definidas por el administrador y con el contexto.</p>
+                        <p><strong>Firewall de administración unificada de amenazas (UTM): </strong>Un dispositivo UTM suele combinar de
+                            forma flexible las funciones de un firewall de inspección activa con prevención de intrusiones y antivirus.
+                            Además, puede incluir servicios adicionales y, a menudo, administración de la nube.</p>
+                        <p><strong>Firewall de próxima generación (NGFW): </strong>Los firewalls han evolucionado más allá de la inspección
+                            activa y el filtrado simple de paquetes. La mayoría de las empresas están implementando firewalls de próxima
+                            generación para bloquear las amenazas modernas.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="web_hosting">Web Hosting y Dominio</p>
+
+                        <p><strong>Web Hosting y Dominio</strong>
+                            <p><strong>Web hosting: </strong>es un servicio para alojar sitios web, es decir, todos los contenidos de tus
+                                páginas web para que las personas puedan acceder a él en todo momento a través de diferentes dispositivos
+                                siempre que tengan conexión a internet.
+                            <p><strong>Tipos de hosting:</strong>
+                            <p><strong>Hosting Compartido: </strong>En este tipo de hosting (shared hosting) , se alojan varios sitios web en un
+                                mismo servidor. Así, todos los clientes del proveedor comparten los recursos de dicho servidor, como el CPU,
+                                procesador, memoria RAM, ancho de banda, dirección IP y/o la transferencia mensual de datos.</p>
+                            <p><strong>Hosting Privado Virtual (VPS): </strong>Un VPS, es un servicio de almacenamiento web caracterizado por
+                                ser un servidor físico fraccionado virtualmente de forma independiente, es decir, cada proyecto trabaja con su
+                                propio sistema operativo y no comparte recursos con otros.</p>
+                            </p>
+                            <p><strong>Servidor Dedicado:</strong> Es aquel cuyo uso exclusivo es de un solo cliente, por lo que el servidor no
+                                se comparte con otros proyectos.</p>
+                            <p><strong>Hosting en la nube (Cloud Hosting): </strong> Este tipo de hosting distribuye los proyectos en varios
+                                servidores interconectados en una nube por lo que no estará alojado en un solo servidor.</p>
+                            </p>
+                        
+                        
+                            </p>
+                            <p><strong>Dominio: </strong>Un dominio de internet es un nombre único que identifica a una subárea de Internet. El
+                                propósito principal de los nombres de dominio en Internet y del sistema de nombres de dominio (DNS), es traducir
+                                las direcciones IP de cada activo en la red, a términos memorizables y fáciles de encontrar. Esta abstracción
+                                hace posible que cualquier servicio (de red) pueda moverse de un lugar geográfico a otro en Internet, aun cuando
+                                el cambio implique que tendrá una dirección IP diferente</p>
+                        
+                        
+                        
+                            
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="ftp">FTP</p>
+                        <p><strong>FTP</strong>: FTP es un protocolo que se utiliza para transferir todo tipo de archivos entre equipos
+                            conectados a una red, por ejemplo Internet. Las cuentas de FTP son el medio estándar para gestionar el contenido
+                            alojado en un servidor web: enviar archivos, descargarlos, crear directorios, borrar ficheros, etc.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="html">HTML</p>
+                        <p><strong>HTML</strong>: (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente
+                            más básico de la Web. Define el significado y la estructura del contenido web.</p>
+
+                        <p class="display-6 border-bottom border-1 py-1 text-center" id="css">CSS</p> 
+                        <p><strong>CSS</strong>: Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento
+                            estructurado escrito en un lenguaje de marcado.</p>
+            </div>
+        </div>
+    </main>
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
 </html>
