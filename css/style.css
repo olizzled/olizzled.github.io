@@ -6,3 +6,44 @@
 #index_table a{
     font-size: 12.5px;
 }
+
+#rosa{
+    background-color: pink;
+}
+
+#rojo{
+    background-color: red;
+}
+
+#azul{
+    background-color: blue;
+}
+
+#gris{
+    background-color: gray;
+}
+#cafe{
+    background-color: brown;
+}
+
+#negro{
+    background-color: black;
+}
+
+#blanco{
+    background-color: white;
+}
+
+#verde{
+    background-color: green;
+}
+
+#amarillo{
+    background-color: yellow;
+}
+#naranja{
+    background-color: orange;
+}
+#morado{
+    background-color: purple;
+}
