@@ -7,30 +7,63 @@ function setup() {
     canvas.width = 600;
     //PEGAR AQUI SUS CAMBIOS
 
+    
     //CUERPO
 
     ctx.beginPath();
-    ctx.strokeRect(50, 50, 300, 300);
+    ctx.moveTo(50, 50);
+    ctx.lineTo(350, 50);
+    ctx.lineTo(350, 350);
+    ctx.lineTo(50, 350);
+    ctx.lineTo(50, 50);
+       ctx.lineWidth = 4;
+    ctx.stroke();
     ctx.fillStyle = "#fff56c";
     ctx.fill();
+    ctx.closePath();
+
 
     //OJOS 
 
     //OJO IZQ
+    ctx.strokeStyle = "#aead0d";
+    ctx.lineWidth = 10;
+    ctx.beginPath();   
     ctx.arc(140, 120, 50, 0, (Math.PI) * 2, true);
     ctx.stroke();
+    ctx.fillStyle = "#ffffff";
+    ctx.fill();
 
-    //OJO DER
-    ctx.beginPath();
+    // //OJO DER
+    ctx.strokeStyle = "#aead0d";
+    ctx.lineWidth = 5;
+    ctx.beginPath();  
     ctx.arc(260, 120, 50, 0, (Math.PI) * 2, true);
     ctx.stroke();
+    ctx.fillStyle = "#ffffff";
+    ctx.fill();
 
 
+    //NARIZ
     ctx.strokeRect(190, 180, 150, 20);
+    ctx.stroke();
+
+
+    //boca
+    ctx.beginPath();
+    ctx.arc(200, 220, 80, 0, (Math.PI));
+    ctx.stroke();
 
     ctx.beginPath();
-    ctx.arc(200, 200, 80, 0, (Math.PI));
+    ctx.moveTo(100,220);
+    ctx.lineTo(140,220);
     ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(260,220);
+    ctx.lineTo(300,220);
+    ctx.stroke();
+
 
 
 
@@ -54,10 +87,7 @@ function setup() {
     ctx.fillStyle = "#000000";
     ctx.fill();
 
-    // intento de brazos
-    ctx.moveTo(0, 0);
-    ctx.lineTo(200, 100);
-    ctx.stroke();
+
 
 
 }
