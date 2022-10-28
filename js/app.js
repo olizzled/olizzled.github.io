@@ -54,4 +54,7 @@ function setup() {
     ctx.fillStyle = "#000000";
     ctx.fill();
 
+    // intento de brazos
+    ctx.beginPath();
+    ctx.lineTo(301, 100)
 }
