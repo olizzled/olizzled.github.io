@@ -55,6 +55,6 @@ function setup() {
     ctx.fill();
 
     // intento de brazos
-    ctx.beginPath();
-    ctx.lineTo(301, 100)
-}
+    ctx.moveTo(0, 0);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
