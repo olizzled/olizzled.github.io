@@ -32,7 +32,7 @@ document.onkeydown=function(e){k=(e||window.event).keyCode;w=w?0:k=='27'?1:0;p=k
 document.onkeyup=function(e){k=(e||window.event).keyCode;p=k=='65'||k=='81'?0:p;q=k=='38'||k=='40'?0:q}
 
 
-/* Variable index:
+/* Variable practica7:
 a -> left player score
 b -> right player score
 c -> context
