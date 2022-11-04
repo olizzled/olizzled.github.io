@@ -54,7 +54,7 @@ let dict = {
 
 var delay_1, delay_2, delay_3, delay_4;
 var game = null;
-var index = 0;
+var practica7 = 0;
 
 canvas.width = 400;
 canvas.height = 400;
@@ -71,10 +71,10 @@ function menuControl(e) {
       selected();
       break;
     case 38:
-      if (index != 0) {
-        index--;
-        select.style.left = dict[index][0] + '%';
-        select.style.top = dict[index][1] + '%';
+      if (practica7 != 0) {
+        practica7--;
+        select.style.left = dict[practica7][0] + '%';
+        select.style.top = dict[practica7][1] + '%';
       }
       try { menu_sound_1.play(); }
       catch (error) {
@@ -82,10 +82,10 @@ function menuControl(e) {
       }
       break;
     case 40:
-      if (index != 2) {
-        index++;
-        select.style.left = dict[index][0] + '%';
-        select.style.top = dict[index][1] + '%';
+      if (practica7 != 2) {
+        practica7++;
+        select.style.left = dict[practica7][0] + '%';
+        select.style.top = dict[practica7][1] + '%';
       }
       try { menu_sound_1.play(); }
       catch (error) {
@@ -96,7 +96,7 @@ function menuControl(e) {
 }
 
 function selected() {
-  switch (index) {
+  switch (practica7) {
     case 0:
       start();
       break;
@@ -121,7 +121,7 @@ function back(e) {
 
     select.style.top = '49.5%';
     select.style.left = '37%';
-    index = 0;
+    practica7 = 0;
 
     try { menu_sound_2.play(); }
     catch (error) {
